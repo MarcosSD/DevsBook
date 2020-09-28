@@ -11,6 +11,7 @@ if($email && $password){
 
     if($auth->validateLogin($email, $password)){
         header("Location: ".$base);
+        exit;
     }
 
 }
